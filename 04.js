@@ -3,7 +3,7 @@
 
 // solution 
 
-// Callback hell is the situation in asynchronous programming where multiple, nested callbacks make code difficult to read, maintain, and understand. This can happen when callbacks are used within callbacks, resulting in deeply nested code structures that are difficult to maintain.To overcome callback hell, you can use techniques such as using named functions, using Promises, or using async/await syntax. 
+// Callback hell is having multiple nested callbacks within your asynchronous code that are hard to read and manage. This happens when callbacks are used within other callbacks, creating complex and convoluted code. To avoid this, use techniques like named functions, promises, or async/await syntax to make your code cleaner and easier to maintain. 
 
 
 // Code example
@@ -39,7 +39,9 @@
 //   });
   
 
-//   Overcoming callback
+//   Overcoming callback hell
+
+
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
